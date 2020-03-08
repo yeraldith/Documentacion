@@ -8,24 +8,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <style>
-
+        .body {
+            background-color: rgba(209, 203, 214, 0.521);
+        }
     </style>
 </head>
 
-<body>
+<body class="body bgcolor" background="fondo1.jpg">
     <!--menu izquierdo-->
     <div class=" container ">
         <div class="row ">
-            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                <nav class="navbar sticky-top bg-dark" id="navbar ">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 bg-dark">
+                <nav class="sticky-top bg-dark" id="navbar ">
                     <ol>
-                        <li class="mt-3 text-warning "><a class="text-warning text-decoration-none " href="#Introduction ">Introduction</a></li>
-                        <li class="mt-3 text-warning "><a class="text-warning text-decoration-none " href="#display_property ">Normal flow</a></li>
-                        <li class="mt-3 text-warning "><a class="text-warning text-decoration-none " href="#Flexbox ">Flexbox</a></li>
-                        <li class="mt-3 text-warning "><a class="text-warning text-decoration-none " href="#Grids ">Grids</a></li>
-                        <li class="mt-3 text-warning "><a class="text-warning text-decoration-none " href="#Floats ">Floats</a></li>
-                        <li class="mt-3 text-warning "><a class="text-warning text-decoration-none " href="#Positioning ">Positioning</a></li>
-                        <li class="mt-3 text-warning "><a class="text-warning text-decoration-none " href="#Multiple_column_Layout ">Multiple Column Layout</a></li>
+                        <li class="mt-3 text-warning "><a class="text-warning text-decoration-none " href="#Introduction">Introduction</a></li>
+                        <li class="mt-3 text-warning "><a class="text-warning text-decoration-none " href="#display_property">Normal flow</a></li>
+                        <li class="mt-3 text-warning "><a class="text-warning text-decoration-none " href="#Flexbox">Flexbox</a></li>
+                        <li class="mt-3 text-warning "><a class="text-warning text-decoration-none " href="#Grids">Grids</a></li>
+                        <li class="mt-3 text-warning "><a class="text-warning text-decoration-none " href="#Floats">Floats</a></li>
+                        <li class="mt-3 text-warning "><a class="text-warning text-decoration-none " href="#Positioning">Positioning</a></li>
+                        <li class="mt-3 text-warning "><a class="text-warning text-decoration-none " href="#Multiple_column_Layout">Multiple Column Layout</a></li>
                     </ol>
                 </nav>
             </div>
@@ -33,10 +35,10 @@
 
             <main id="main-doc " class="col-sm-8 col-md-8 col-lg-8 col-xl-8 ">
                 <h1 class="font-weight-bolder text-center mt-5">CSS Layout</h1>
-                <section class="main-section " id="Introduction ">
+                <section class="main-section" id="Introduction">
                     <header class="font-weight-bolder text-muted h1 "> Introduction</header>
                     <nav>
-                        <p class="p-4 ">CSS page layout techniques allow us to take elements contained in a web page and control where they are positioned relative to their default position in normal layout flow, the other elements around them, their parent container,
+                        <p class="p-4 text-justify">CSS page layout techniques allow us to take elements contained in a web page and control where they are positioned relative to their default position in normal layout flow, the other elements around them, their parent container,
                             or the main viewport/window. The page layout techniques we'll be covering in more detail in this module are</p>
                         <li class="ml-5 ">Normal flow</li>
                         <li class="ml-5 ">The display property</li>
@@ -45,27 +47,27 @@
                         <li class="ml-5 ">Floats</li>
                         <li class="ml-5 ">Positioning</li>
                         <li class="ml-5 ">Multiple-column layout</li><br>
-                        <p class="p-4 ">Each technique has its uses, advantages, and disadvantages, and no technique is designed to be used in isolation. By understanding what each method is designed for you will be in a good place to understand which is the best layout
+                        <p class="p-4  text-justify">Each technique has its uses, advantages, and disadvantages, and no technique is designed to be used in isolation. By understanding what each method is designed for you will be in a good place to understand which is the best layout
                             tool for each task.</p>
                     </nav>
                 </section>
-                <section class="main-section " id="display_property ">
+                <section class="main-section" id="display_property">
                     <header class="font-weight-bolder text-muted h1 ">The Display Property</header>
-                    <p class="p-4 ">The main methods of achieving page layout in CSS are all values of the display property. This property allows us to change the default way something displays. Everything in normal flow has a value of display, used as the default way
+                    <p class="p-4 text-justify">The main methods of achieving page layout in CSS are all values of the display property. This property allows us to change the default way something displays. Everything in normal flow has a value of display, used as the default way
                         that elements they are set on behave. For example, the fact that paragraphs in English display one below the other is due to the fact that they are styled with display: block. If you create a link around some text inside a paragraph,
                         that link remains inline with the rest of the text, and doesn’t break onto a new line. This is because the a element is display: inline by default.</p>
-                    <p class="ml-4 ">You can change this default display behavior. For example, the li element is display: block by default, meaning that list items display one below the other in our English document. If we change the display value to inline they now
+                    <p class="p-4 text-justify">You can change this default display behavior. For example, the li element is display: block by default, meaning that list items display one below the other in our English document. If we change the display value to inline they now
                         display next to each other, as words would do in a sentence. The fact that you can change the value of display for any element means that you can pick HTML elements for their semantic meaning, without being concerned about how
                         they will look. The way they look is something that you can change.</p>
-                    <p class="ml-4 ">In addition to being able to change the default presentation by turning an item from block to inline and vice versa, there are some bigger layout methods that start out as a value of display. However, when using these, you will generally
+                    <p class="p-4 text-justify">In addition to being able to change the default presentation by turning an item from block to inline and vice versa, there are some bigger layout methods that start out as a value of display. However, when using these, you will generally
                         need to invoke additional properties. The two values most important for our purposes when discussing layout are display: flex and display: grid.</p>
                 </section>
-                <section class="main-section " id="Flexbox ">
+                <section class="main-section" id="Flexbox">
                     <header class="font-weight-bolder text-muted h1 ">Flexbox</header><br>
-                    <p class="p-4 ">Flexbox is the short name for the Flexible Box Layout Module, designed to make it easy for us to lay things out in one dimension — either as a row or as a column. To use flexbox, you apply display: flex to the parent element of the
+                    <p class="p-4 text-justify ">Flexbox is the short name for the Flexible Box Layout Module, designed to make it easy for us to lay things out in one dimension — either as a row or as a column. To use flexbox, you apply display: flex to the parent element of the
                         elements you want to lay out; all its direct children then become flex items. We can see this in a simple example.</p>
-                    <p class="ml-3 ">The HTML markup below gives us a containing element, with a class of wrapper, inside which are three div elements. By default these would display as block elements, below one another, in our English language document.</p>
-                    <p class="ml-4 ">However, if we add display: flex to the parent, the three items now arrange themselves into columns. This is due to them becoming flex items and being affected by some initial values that flexbox sets on the flex container. They are
+                    <p class="p-4 text-justify">The HTML markup below gives us a containing element, with a class of wrapper, inside which are three div elements. By default these would display as block elements, below one another, in our English language document.</p>
+                    <p class="p-4 text-justify ">However, if we add display: flex to the parent, the three items now arrange themselves into columns. This is due to them becoming flex items and being affected by some initial values that flexbox sets on the flex container. They are
                         displayed in a row, because the initial value of flex-direction set on their parent is row. They all appear to stretch to the height of the tallest item, because the initial value of the align-items property set on their parent
                         is stretch. This means that the items stretch to the height of the flex container, which in this case is defined by the tallest item. The items all line up at the start of the container, leaving any extra space at the end of the
                         row.
@@ -77,50 +79,52 @@
                           </code>
                     <br>
                 </section><br>
-                <section class="main-section " id="Grids ">
+                <section class="main-section " id="Grids">
                     <header class="font-weight-bolder text-muted h1 ">Grid</header>
-                    <p class="p-4 "> While flexbox is designed for one-dimensional layout, Grid Layout is designed for two dimensions — lining things up in rows and columns.</p>
-                    <p class="ml-4 ">Once again, you can switch on Grid Layout with a specific value of display — display: grid. The below example uses similar markup to the flex example, with a container and some child elements. In addition to using display: grid, we
+                    <p class="p-4 text-justify"> While flexbox is designed for one-dimensional layout, Grid Layout is designed for two dimensions — lining things up in rows and columns.</p>
+                    <p class="p-4 text-justify ">Once again, you can switch on Grid Layout with a specific value of display — display: grid. The below example uses similar markup to the flex example, with a container and some child elements. In addition to using display: grid, we
                         are also defining some row and column tracks on the parent using the grid-template-rows and grid-template-columns properties respectively. We've defined three columns each of 1fr and two rows of 100px. I don’t need to put any rules
                         on the child elements; they are automatically placed into the cells our grid has created.</p>
 
                 </section><br>
-                <section class="main-section " id="Floats ">
+                <section class="main-section " id="Floats">
                     <header class="font-weight-bolder text-muted h1 ">Float</header>
-                    <p class="p-4 ">Floating an element changes the behavior of that element and the block level elements that follow it in normal flow. The element is moved to the left or right and removed from normal flow, and the surrounding content floats around
+                    <p class="p-4 text-justify">Floating an element changes the behavior of that element and the block level elements that follow it in normal flow. The element is moved to the left or right and removed from normal flow, and the surrounding content floats around
                         the floated item.</p>
-                    <p class="ml-4 ">The float property has four possible values:</p>
+                    <p class="p-4 ">The float property has four possible values:</p>
                     <li class="ml-5 ">left — Floats the element to the left.</li>
                     <li class="ml-5 ">right — Floats the element to the right.</li>
                     <li class="ml-5 ">none — Specifies no floating at all. This is the default value.</li>
                     <li class="ml-5 ">inherit — Specifies that the value of the float property should be inherited from the element's parent element.</li>
                 </section><br>
-                <section class="main-section " id="Positioning ">
+                <section class="main-section " id="Positioning">
                     <header class="font-weight-bolder text-muted h1 ">Positioning</header>
-                    <p class="p-4 ">Positioning allows you to move an element from where it would be placed when in normal flow to another location. Positioning isn’t a method for creating your main page layouts, it is more about managing and fine-tuning the position
+                    <p class="p-4 text-justify">Positioning allows you to move an element from where it would be placed when in normal flow to another location. Positioning isn’t a method for creating your main page layouts, it is more about managing and fine-tuning the position
                         of specific items on the page.</p>
-                    <p class="ml-4 ">There are however useful techniques for certain layout patterns that rely on the position property. Understanding positioning also helps in understanding normal flow, and what it is to move an item out of normal flow.</p>
-                    <p class="ml-4 ">There are five types of positioning you should know about:</p>
+                    <p class="p-4 text-justify ">There are however useful techniques for certain layout patterns that rely on the position property. Understanding positioning also helps in understanding normal flow, and what it is to move an item out of normal flow.</p>
+                    <p class="p-4 text-justify">There are five types of positioning you should know about:</p>
                     <li class="ml-5 ">Static positioning</li>
-                    <p class="ml-4 "> is the default that every element gets — it just means "put the element into its normal position in the document layout flow — nothing special to see here ".</p>
+                    <p class="p-4 text-justify"> is the default that every element gets — it just means "put the element into its normal position in the document layout flow — nothing special to see here ".</p>
                     <li class="ml-5 ">Relative positioning</li>
-                    <p class="ml-4 ">allows you to modify an element's position on the page, moving it relative to its position in normal flow — including making it overlap other elements on the page.</p>
+                    <p class="p-4 text-justify">allows you to modify an element's position on the page, moving it relative to its position in normal flow — including making it overlap other elements on the page.</p>
                     <li class="ml-5 ">Absolute positioning</li>
-                    <p class="ml-4 ">moves an element completely out of the page's normal layout flow, like it is sitting on its own separate layer. From there, you can fix it in a position relative to the edges of the page's
+                    <p class="p-4 text-justify">moves an element completely out of the page's normal layout flow, like it is sitting on its own separate layer. From there, you can fix it in a position relative to the edges of the page's
                         <html> element (or its nearest positioned ancestor element). This is useful for creating complex layout effects such as tabbed boxes where different content panels sit on top of one another and are shown and hidden as desired, or information
                         panels that sit off screen by default, but can be made to slide on screen using a control button.</p>
                     <li class="ml-5 ">Fixed positioning</li>
-                    <p class="ml-4 "> is very similar to absolute positioning, except that it fixes an element relative to the browser viewport, not another element. This is useful for creating effects such as a persistent navigation menu that always stays in the same
+                    <p class="p-4 text-justify"> is very similar to absolute positioning, except that it fixes an element relative to the browser viewport, not another element. This is useful for creating effects such as a persistent navigation menu that always stays in the same
                         place on the screen as the rest of the content scrolls.</p>
-                    <li class="ml-5 ">Sticky positioning</li>
-                    <p class="ml-4 ">is a newer positioning method which makes an element act like position: static until it hits a defined offset from the viewport, at which point it acts like position: fixed.</p>
+                    <li class="ml-5">Sticky positioning</li>
+                    <p class="p-4 text-justify">is a newer positioning method which makes an element act like position: static until it hits a defined offset from the viewport, at which point it acts like position: fixed.</p>
                 </section><br>
-                <section class="main-section " id="Multiple_column_Layout ">
-                    <header class="font-weight-bolder text-muted h1 ">Positioning</header>
-                    <p class="p-4 ">The multi-column layout module gives us a way to lay out content in columns, similar to how text flows in a newspaper. While reading up and down columns is less useful in a web context as you don’t want to force users to scroll up
-                        and down, arranging content into columns can be a useful technique.</p>
-                    <p class="ml-4 ">TTo turn a block into a multicol container we use either the column-count property, which tells the browser how many columns we would like to have, or the column-width property, which tells the browser to fill the container with as
-                        many columns of at least that width.</p>
+                <section class="main-section " id="Multiple_column_Layout">
+                    <header class="font-weight-bolder text-muted h1 ">Multiple Column Layout</header>
+                    <p class="p-4 text-justify">The CSS Multi-column Layout Module extends the block layout mode to allow the easy definition of multiple columns of text. People have trouble reading text if lines are too long; if it takes too long for the eyes to move from the end
+                        of the one line to the beginning of the next, they lose track of which line they were on. Therefore, to make maximum use of a large screen, authors should have limited-width columns of text placed side by side, just as newspapers
+                        do.
+                    </p>
+                    <p class="p-4 text-justify ">Unfortunately this is impossible to do with CSS and HTML without forcing column breaks at fixed positions, or severely restricting the markup allowed in the text, or using heroic scripting. This limitation is solved by adding new CSS
+                        properties to extend the traditional block layout mode.</p>
                 </section><br>
                 <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction ">More information</a>
             </main>
